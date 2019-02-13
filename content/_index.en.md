@@ -7,6 +7,8 @@ nav:
   base_color : navbar-dark
 cover:
   title: Levite's Voice
-  typed: ["Hill Song", "Praise"]
----
+  typed:
+  - Hill Song
+  - Praise
 
+---
