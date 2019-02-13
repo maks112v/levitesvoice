@@ -1,0 +1,36 @@
+---
+label: Page
+hide_body: 
+is_partial: 
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: nav_bar_style
+  label: Nav bar style
+  type: text
+  hidden: false
+  default: ''
+- name: cover
+  label: Cover
+  type: field_group
+  fields:
+  - name: title
+    label: Title
+    type: text
+    hidden: false
+    default: ''
+  - name: typed
+    label: Typed
+    type: list
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
