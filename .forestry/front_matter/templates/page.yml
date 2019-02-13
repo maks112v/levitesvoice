@@ -36,3 +36,4 @@ fields:
   default: ''
 pages:
 - content/_index.md
+- content/_index.ru.md
