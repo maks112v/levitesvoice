@@ -1,0 +1,36 @@
+{{ define "main" }}
+{{ with .Params.cover }}
+<section class="p-0">
+  <div class="swiper-container text-white" data-top-top="transform: translateY(0px);" data-top-bottom="transform: translateY(250px);">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide vh-100">
+        <div class="image image-overlay image-zoom" style="background-image:url(/images/demo/studio/studio-1.jpg)"></div>
+        <div class="caption" data-aos="fade-up">
+          <div class="container">
+            <div class="row align-items-center vh-100">
+              <div class="col-lg-10" data-swiper-parallax-y="-100%">
+                <h1 class="display-1">{{ .title }}<br><i class="font-weight-bold" id="typed"></i></h1>
+                <div id="typed-strings">
+                  {{ range .typed }}
+                    <p>{{ . }}</p>
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-footer mb-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col text-center">
+              <div class="mouse"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
