@@ -1,9 +1,10 @@
-<header class="header-sticky header-dark">
+{{ with .Params.nav }}
+<header class="header-sticky {{ .text_color }}">
   <div class="container">
-    <nav class="navbar navbar-expand-lg {{ .Params.nav_bar_style }}">
+    <nav class="navbar navbar-expand-lg {{ .base_color }}">
       <a class="navbar-brand" href="/">
-        <img class="navbar-logo navbar-logo-light" src="../../assets/images/demo/logo/logo-light.svg" alt="Logo">
-        <img class="navbar-logo navbar-logo-dark" src="../../assets/images/demo/logo/logo-dark.svg" alt="Logo">
+        <img class="navbar-logo navbar-logo-light" src="/images/demo/logo/logo-light.svg" alt="Logo">
+        <img class="navbar-logo navbar-logo-dark" src="/images/demo/logo/logo-dark.svg" alt="Logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="burger"><span></span></span></button>
@@ -20,12 +21,14 @@
         </ul>
 
         <ul class="navbar-nav align-items-center ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/" role="button">
-              Home
+          {{ range .Site.Menus.main -}}
+          <li class='nav-item'>
+            <a class="nav-link" href="{{ .URL | absLangURL }}" role="button">
+              {{ .Name }}
             </a>
           </li>
-          <li class="nav-item">
+          {{- end }}
+          <!-- <li class="nav-item">
             <a class="nav-link" href="/about" role="button">
               About
             </a>
@@ -44,9 +47,10 @@
             <a class="nav-link" href="/contact" role="button">
               Contact
             </a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </nav>
   </div>
 </header>
+{{ end }}
