@@ -9,13 +9,15 @@
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="burger"><span></span></span></button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- <ul class="navbar-nav align-items-center mr-auto">
+        <ul class="navbar-nav align-items-center mr-auto">
+          {{ range $.Site.Home.AllTranslations }}
           <li class="nav-item">
-            <a class="nav-link" href="../../index.html" role="button">
-              Home
+            <a class="nav-link" href="{{ .Permalink }}" role="button">
+              {{ .Language.LanguageName }}
             </a>
           </li>
-        </ul> -->
+          {{ end }}
+        </ul>
 
         <ul class="navbar-nav align-items-center ml-auto">
           <li class="nav-item">
