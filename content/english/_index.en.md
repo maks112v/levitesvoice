@@ -1,5 +1,5 @@
 ---
-title: Levite's Voice - 
+title: Levite's Voice - English
 date: 2019-02-13 03:54:02 +0000
 nav:
   text_color: header-dark
@@ -13,5 +13,4 @@ menu:
   main:
     name: Home
     weight: 1
-
 ---
