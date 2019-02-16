@@ -21,13 +21,13 @@
         </ul>
 
         <ul class="navbar-nav align-items-center ml-auto">
-          {{ range .Site.Menu.main -}}
+          {{ range .Site.Menu.main }}
           <li class='nav-item'>
             <a class="nav-link" href="{{ .URL | absLangURL }}" role="button">
               {{ .Name }}
             </a>
           </li>
-          {{- end }}
+          {{ end }}
           <!-- <li class="nav-item">
             <a class="nav-link" href="/about" role="button">
               About

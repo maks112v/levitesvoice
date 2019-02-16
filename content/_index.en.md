@@ -1,5 +1,5 @@
 ---
-title: 'Levite''s Voice - '
+title: Levite's Voice - 
 date: 2019-02-13 03:54:02 +0000
 nav:
   text_color: header-dark
