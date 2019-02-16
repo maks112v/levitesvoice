@@ -1,0 +1,130 @@
+{{ define "head" }}
+<style>
+.bg-primary {
+    background-color: #0D47A1 !important;
+}
+</style>
+{{ end }}
+
+{{ define "main" }}
+<section class="bg-primary hero hero-with-header">
+  <div class="container text-white">
+    <div class="row">
+      <div class="col-md-10 col-lg-8">
+        <h1 class="mb-0">{{ .Params.header | safeHTML }}</h1>
+      </div>
+    </div>
+  </div>    
+</section>
+
+
+<!-- careers -->
+<section class="bg-primary pt-0">
+  <div class="container text-white">
+    <div class="row">
+      <div class="col-12 mb-0">
+        <h2 class="eyebrow mb-2">Developers</h2>
+      </div>
+      <div class="col">
+        <a href="" class="job row align-items-center">
+          <span class="col-md-6 fs-22 font-weight-light text-white">
+            Android Developer
+          </span>
+          <span class="col-md-3">
+            $45k - $50k
+          </span>
+          <span class="col-md-3 text-md-right small">
+            San Francisco, USA
+          </span>
+        </a>
+        <a href="" class="job row align-items-center">
+          <span class="col-md-6 fs-22 font-weight-light text-white">
+            Product Designer
+          </span>
+          <span class="col-md-3">
+            $40k - $55k
+          </span>
+          <span class="col-md-3 text-md-right small">
+            Remote
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 mb-0">
+        <h2 class="eyebrow mb-2">Designers</h2>
+      </div>
+      <div class="col">
+        <a href="" class="job row align-items-center">
+          <span class="col-md-6 fs-22 font-weight-light text-white">
+            Senior Product Designer
+          </span>
+          <span class="col-md-3">
+            $38k - $44k
+          </span>
+          <span class="col-md-3 text-md-right small">
+            New York, USA
+          </span>
+        </a>
+        <a href="" class="job row align-items-center">
+          <span class="col-md-6 fs-22 font-weight-light text-white">
+            Product Design Manager
+          </span>
+          <span class="col-md-3">
+            $70k - $122k
+          </span>
+          <span class="col-md-3 text-md-right small">
+            Toronto, Canada
+          </span>
+        </a>
+        <a href="" class="job row align-items-center">
+          <span class="col-md-6 fs-22 font-weight-light text-white">
+            Graphic Designer
+          </span>
+          <span class="col-md-3">
+            $35k - $45k
+          </span>
+          <span class="col-md-3 text-md-right small">
+            Barcelona, Spain
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- / careers -->
+
+
+<section class="bg-primary text-white separator-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Subscribe and never miss new positions</h2> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-5 col-lg-6">
+              <input type="email" class="form-control form-control-lg" id="mail-input" placeholder="Your Mail">
+            </div>
+            <div class="form-group col-md-3 col-lg-4">
+              <select class="form-control form-control-lg" id="type-input">
+                <option>Type of position</option>
+                <option>Design</option>
+                <option>Development</option>
+                <option>Managment</option>
+                <option>QA</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4 col-lg-2">
+              <a href="" class="btn btn-block btn-lg btn-white">Subscribe</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

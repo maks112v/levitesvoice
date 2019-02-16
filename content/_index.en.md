@@ -9,8 +9,4 @@ cover:
   typed:
   - Hill Song
   - Praise
-menu:
-  main:
-    name: Home
-    weight: 1
 ---

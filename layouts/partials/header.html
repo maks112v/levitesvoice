@@ -13,7 +13,7 @@
         <ul class="navbar-nav align-items-center mr-auto">
           {{ range $.Site.Home.AllTranslations }}
           <li class="nav-item">
-            <a class="nav-link" href="{{ .Permalink }}" role="button">
+            <a class="nav-link" href="{{ .Permalink | absLangURL }}" role="button">
               {{ .Language.LanguageName }}
             </a>
           </li>
@@ -21,33 +21,31 @@
         </ul>
 
         <ul class="navbar-nav align-items-center ml-auto">
-          {{ range .Site.Menu.main }}
-          <li class='nav-item'>
-            <a class="nav-link" href="{{ .URL | absLangURL }}" role="button">
-              {{ .Name }}
+          <li class="nav-item">
+            <a class="nav-link" href='{{ "/" | absLangURL }}' role="button">
+              Home
             </a>
           </li>
-          {{ end }}
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="/about" role="button">
+          <li class="nav-item">
+            <a class="nav-link" href='{{ "/about" | absLangURL }}' role="button">
               About
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/songs" role="button">
+            <a class="nav-link" href='{{ "/songs" | absLangURL }}' role="button">
               Songs
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/sheet-music" role="button">
+            <a class="nav-link" href='{{ "/sheet-music" | absLangURL }}' role="button">
               Sheet Music
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contact" role="button">
+            <a class="nav-link" href='{{ "/contact" | absLangURL }}' role="button">
               Contact
             </a>
-          </li> -->
+          </li>
         </ul>
       </div>
     </nav>

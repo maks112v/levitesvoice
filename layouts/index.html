@@ -12,7 +12,7 @@
                 <h1 class="display-1">{{ .title }}<br><i class="font-weight-bold" id="typed"></i></h1>
                 <div id="typed-strings">
                   {{ range .typed }}
-                    <p>{{ . }}</p>
+                  <p>{{ . }}</p>
                   {{ end }}
                 </div>
               </div>
@@ -32,5 +32,173 @@
     </div>
   </div>
 </section>
+
+<section class="bg-dark">
+  <div class="container">
+    <div class="row text-white justify-content-between align-items-center">
+      <div class="col-md-4">
+        <h2 class="text-muted"><span class="text-white">Recent</span> Songs</h2>
+      </div>
+      <div class="col-md-7">
+        <div class="input-group rounded">
+          <input type="text" class="form-control px-3" placeholder="Search lessons ..." aria-label="Search lessons">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row text-white" data-aos="fade-left">
+      <div class="col">
+        <div class="owl-carousel owl-carousel-library visible" data-loop="true" data-items="[3,2,1]" data-margin="30"
+          data-nav="true">
+          <article class="tile tile-long">
+            <div class="tile-image" style="background-image: url(/images/demo/learning/learning-4.jpg)"></div>
+            <div>
+              <div class="tile-header on-hover text-right">
+                <button class="btn btn-sm btn-outline-white">Listen Now</button>
+              </div>
+              <div class="tile-footer">
+                <span class="eyebrow">Development</span>
+                <h3>Developing Wordpress Theme from Scratch</h3>
+              </div>
+            </div>
+          </article>
+          <article class="tile tile-long">
+            <div class="tile-image" style="background-image: url(/images/demo/learning/learning-5.jpg)"></div>
+            <div>
+              <div class="tile-header on-hover text-right">
+                <button class="btn btn-sm btn-outline-white">Listen Now</button>
+              </div>
+              <div class="tile-footer">
+                <span class="eyebrow">Photography</span>
+                <h3>Finding the Right Exposure in Low Light</h3>
+              </div>
+            </div>
+          </article>
+          <article class="tile tile-long">
+            <div class="tile-image" style="background-image: url(/images/demo/learning/learning-6.jpg)"></div>
+            <div>
+              <div class="tile-header on-hover text-right">
+                <button class="btn btn-sm btn-outline-white">Listen Now</button>
+              </div>
+              <div class="tile-footer">
+                <span class="eyebrow">Design</span>
+                <h3>Unleash Your Hand Drawing Skills</h3>
+              </div>
+            </div>
+          </article>
+          <article class="tile tile-long">
+            <div class="tile-image" style="background-image: url(/images/demo/learning/learning-8.jpg)"></div>
+            <div>
+              <div class="tile-header on-hover text-right">
+                <button class="btn btn-sm btn-outline-white">Listen Now</button>
+              </div>
+              <div class="tile-footer">
+                <span class="eyebrow">5 Day City Tour</span>
+                <h3>New York</h3>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-light">
+  <div class="container">
+    <div class="row align-items-center justify-content-center presentation-container">
+      <div class="col-8 col-md-6 col-lg-4" data-aos="zoom-in">
+        <div class="presentation-circle">
+          <figure style="background-image: url('/images/demo/learning/learning-10.jpg')"></figure>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 pl-md-7 text-center text-md-left">
+        <span class="eyebrow text-primary mb-1">Special for you</span>
+        <h3 class="h2">Amazing Teachers</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequuntur, voluptas repellendus.</p>
+      </div>
+    </div>
+    <div class="row align-items-center justify-content-center presentation-container">
+      <div class="col-md-6 col-lg-5 pr-md-7 text-center text-md-right">
+        <span class="eyebrow text-primary mb-1">Special for you</span>
+        <h3 class="h2">Face to Face <br>Online Courses</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequuntur, voluptas repellendus</p>
+      </div>
+      <div class="col-8 col-md-6 col-lg-4" data-aos="zoom-in">
+        <div class="presentation-circle with-delay">
+          <figure style="background-image: url('/images/demo/learning/learning-11.jpg')"></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="news">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h2>Latest News</h2>
+      </div>
+    </div>
+    <div class="row gutter-2">
+      <div class="col-md-6 col-lg-4">
+        <article class="tile">
+          <div class="tile-image" style="background-image: url(/images/demo/image-1.jpg)"></div>
+          <div class="tile-content">
+            <div class="tile-header">
+              <span class="eyebrow mb-1">Design</span>
+              <h3>Quick guide on traveling with friends.</h3>
+            </div>
+            <div class="tile-footer">
+              <button class="btn btn-ico btn-outline-white btn-rounded">
+                <i class="icon-arrow-right2 fs-20"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="tile">
+          <div class="tile-image" style="background-image: url(/images/demo/image-2.jpg)"></div>
+          <div class="tile-content">
+            <div class="tile-header">
+              <span class="eyebrow mb-1">Design</span>
+              <h3>Quick guide on traveling with friends.</h3>
+            </div>
+            <div class="tile-footer">
+              <button class="btn btn-ico btn-outline-white btn-rounded">
+                <i class="icon-arrow-right2 fs-20"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="tile">
+          <div class="tile-image" style="background-image: url(/images/demo/image-3.jpg)"></div>
+          <div class="tile-content">
+            <div class="tile-header">
+              <span class="eyebrow mb-1">Design</span>
+              <h3>Quick guide on traveling with friends.</h3>
+            </div>
+            <div class="tile-footer">
+              <button class="btn btn-ico btn-outline-white btn-rounded">
+                <i class="icon-arrow-right2 fs-20"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <a href="" class="btn btn-outline-primary btn-rounded px-5">View All</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 {{ end }}
 {{ end }}

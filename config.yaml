@@ -2,14 +2,12 @@
 baseURL: https://levites-voice-development.netlify.com/
 languages:
   en:
-    contentDir: content/english
     languageName: English
     title: Levite's Voice
     weight: 1
     params:
       linkedin: https://linkedin.com/whoever
   ru:
-    contentDir: content/russian
     languageName: Russian
     title: Mon blogue
     weight: 2
