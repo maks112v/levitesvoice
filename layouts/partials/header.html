@@ -21,7 +21,7 @@
         </ul>
 
         <ul class="navbar-nav align-items-center ml-auto">
-          {{ range .Site.Menus.main -}}
+          {{ range .Site.Menu.main -}}
           <li class='nav-item'>
             <a class="nav-link" href="{{ .URL | absLangURL }}" role="button">
               {{ .Name }}

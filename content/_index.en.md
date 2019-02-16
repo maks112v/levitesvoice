@@ -10,5 +10,7 @@ cover:
   typed:
   - Hill Song
   - Praise
-
+menu:
+  test:
+    weight: 1
 ---

@@ -8,4 +8,7 @@ nav:
 cover:
   title: Levite's Russian
   typed: ["Hill Song", "Praise"]
+menu:
+  main:
+    weight: 3
 ---
