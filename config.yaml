@@ -1,5 +1,6 @@
+---
 DefaultContentLanguage: en
-baseURL: 'https://levites-voice-development.netlify.com/'
+baseURL: https://levites-voice-development.netlify.com/
 languages:
   en:
     languageName: English
@@ -7,22 +8,22 @@ languages:
     weight: 1
     menu:
       main:
-        - name: Home
-          url: /
-          weight: 0
-        - name: About
-          url: /about
-          weight: 1
+      - name: Home
+        url: "/"
+        weight: 0
+      - name: About
+        url: "/about"
+        weight: 1
     params:
-      linkedin: 'https://linkedin.com/whoever'
+      linkedin: https://linkedin.com/whoever
   ru:
     languageName: Russian
     title: Mon blogue
     weight: 2
     menu:
       main:
-        - name: Home
-          url: /
-          weight: 0
+      - name: Home
+        url: "/"
+        weight: 0
     params:
-      linkedin: 'https://linkedin.com/fr/whoever'
+      linkedin: https://linkedin.com/fr/whoever
