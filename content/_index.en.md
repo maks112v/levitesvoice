@@ -9,4 +9,6 @@ cover:
   typed:
   - Hill Song
   - Praise
+songs:
+  title: <span class="text-white">Recent</span>
 ---
