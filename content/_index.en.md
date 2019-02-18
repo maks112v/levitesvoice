@@ -6,9 +6,10 @@ nav:
   base_color: navbar-dark
 cover:
   title: Levite's Voice
+  image: /images/headeren.jpg
   typed:
   - Hill Song
   - Praise
-songs:
-  title: <span class="text-white">Recent</span>
+recent_songs:
+  title: <span class="text-white">Recent</span> Songs
 ---
